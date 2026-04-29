@@ -1,68 +1,68 @@
-NUCES Airline Flight System (NAFS)
+# NUCES Airline Flight System (NAFS)
 A comprehensive C++ console-based flight reservation and management system for a newly established airline operating across major cities in Pakistan.
-📋 Overview
+## 📋 Overview
 NUCES Airline Flight System (NAFS) is a flight ticketing and management platform that facilitates:
 
-Flight reservations and bookings
-Flight schedule management
-Airport operations management
-Passenger information management
-Administrative controls for airline operations
+- Flight reservations and bookings
+- Flight schedule management
+- Airport operations management
+- Passenger information management
+- Administrative controls for airline operations
 
 The system adheres to COVID-19 safety protocols by maintaining social distancing across all flights.
-🚀 Features
-Admin Panel
+## 🚀 Features
+## Admin Panel
 Administrators can access the system with credentials to:
 
-Manage City Routes: Add, view, and modify flight routes between cities
-Manage Flights: Schedule flights, set departure/arrival times, and manage flight details
-Manage Airplane Information: Configure airplane details, seating capacity, and availability
-View All Passengers: Access comprehensive passenger booking records
+- Manage City Routes: Add, view, and modify flight routes between cities
+- Manage Flights: Schedule flights, set departure/arrival times, and manage flight details
+- Manage Airplane Information: Configure airplane details, seating capacity, and availability
+- View All Passengers: Access comprehensive passenger booking records
 
-Passenger Panel
+## Passenger Panel
 Passengers (both registered and unregistered) can:
 
-View Flight Schedules: Browse complete route information or search with custom keywords
-Flight Reservation: Book flights with account credentials
-Check Availability: View available seats in both Economy and Business class
-Inquiry System: Access detailed information about the airline system
+- *View Flight Schedules*: Browse complete route information or search with custom keywords
+- *Flight Reservation: Book* flights with account credentials
+- *Check Availability*: View available seats in both Economy and Business class
+- *Inquiry System*: Access detailed information about the airline system
 
 🏗️ System Architecture
 Core Components
 Classes:
 
-MainSystem: Entry point and main menu handler
-AdminPanel: Administrative functions and authentication
-PassengerPanel: Passenger booking and inquiry interface
-Aeroplane: Airplane details, seating, and flight cost management
-City: City information and associated airports
-Country: Country-level data management
-Airport: Airport operations and airplane tracking
-Passenger: Passenger information (Economy/Business class)
-Data: Data persistence and file handling
-OnlineData: Runtime data management and route display
+- MainSystem: Entry point and main menu handler
+- AdminPanel: Administrative functions and authentication
+- PassengerPanel: Passenger booking and inquiry interface
+- Aeroplane: Airplane details, seating, and flight cost management
+- City: City information and associated airports
+- Country: Country-level data management
+- Airport: Airport operations and airplane tracking
+- Passenger: Passenger information (Economy/Business class)
+- Data: Data persistence and file handling
+- OnlineData: Runtime data management and route display
 
-Technical Specifications
-Fleet Information:
+## Technical Specifications
+### Fleet Information:
 
 10 airplanes stationed per city
 Maximum 5 planes can land at an airport simultaneously
 10 local flights per airport daily
 5 international flights per airport daily
 
-Seating Capacity:
+### Seating Capacity:
 
 Economy Class: 50 seats per airplane
 Business Class: 10 seats per airplane
 
-Pricing (Base Rates):
+### Pricing (Base Rates):
 
 Local Economy: PKR 10,500
 Local Business: PKR 21,000
 International Economy: PKR 22,000
 International Business: PKR 44,000
 
-📁 Project Structure
+## 📁 Project Structure
 project/
 ├── Source.cpp              # Main entry point
 ├── MainSys.h              # Main system menu and routing
@@ -84,7 +84,7 @@ C++ Compiler (GCC, MinGW, or MSVC)
 Windows OS (uses system("cls") and _getch())
 Standard C++ libraries
 
-Compilation
+## Compilation
 Using g++:
 bashg++ Source.cpp -o AirlineSystem.exe
 Using Visual Studio:
@@ -145,7 +145,7 @@ The system uses text file-based storage:
 AdminData.txt: Stores admin credentials
 Passenger_Data.txt: Stores passenger booking records
 
-⚠️ Known Limitations
+## ⚠️ Known Limitations
 
 Console-based interface (no GUI)
 Windows-specific commands (system("cls"), _getch())
@@ -153,7 +153,7 @@ File-based storage (no database integration)
 Limited error handling for invalid inputs
 Single admin account support
 
-🔮 Future Enhancements
+## 🔮 Future Enhancements
 
 Database integration (MySQL/PostgreSQL)
 Multi-platform support (Linux/Mac)
@@ -164,12 +164,12 @@ Multi-admin support with role-based access
 Real-time seat availability updates
 Ticket cancellation and refund management
 
-👥 System Actors
+## 👥 System Actors
 
 Administrator: Manages flights, routes, and system configuration
 Registered Passenger: Can book flights and view history
 Unregistered User: Can view flight schedules and system information
 
 
-👨‍💻 Contributing
+## 👨‍💻 Contributing
 [Hamza Hussain, Usman Wajid, Eesha Irfan]
